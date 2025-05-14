@@ -1,0 +1,22 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+# [programs.localnet]
+# sol_bank = "72p9csHh7VeF2yCgsYjcwNzujaQpPvLKJZ9c5v6nz9CV"
+
+[programs.devnet]
+sol_bank = "72p9csHh7VeF2yCgsYjcwNzujaQpPvLKJZ9c5v6nz9CV"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
