@@ -1,6 +1,7 @@
 [workspace]
 members = [
-    "programs/*"
+    "programs/sol_bank",
+    "sol_bank_client",
 ]
 resolver = "2"
 
